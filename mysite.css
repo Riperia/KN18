@@ -1,0 +1,13 @@
+body{
+	background:#ccc;
+	/*font-size:2em;*/
+	color:white;
+	}
+.zag1.zagolovok {font-size:3em;background:pink;}
+/*#z1 {background:yellow;}*/
+/*h1.zagolovok {background:black;}*/
+.zagolovok {background:red;}
+.zag1.zag2 {background:green;}
+
+h1 {background:blue;color:white;}
+
