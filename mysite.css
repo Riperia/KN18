@@ -1,5 +1,5 @@
 body{
-	background:#ccc;
+	/*background:#ccc;*/
 	/*font-size:2em;*/
 	color:white;
 	}
@@ -10,4 +10,3 @@ body{
 .zag1.zag2 {background:green;}
 
 h1 {background:blue;color:white;}
-
