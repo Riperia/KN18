@@ -1,13 +1,43 @@
-body{
-	/*background:#ccc;*/
+body
+	{
 	/*font-size:2em;*/
-	color:white;
 	}
-	#main {background: #777;}
-.zag1.zagolovok {font-size:3em;background:pink;}
+	
+.zagolovok {font-size:3em;background:pink;color:blue;}
+.red {color:red}
+.zagolovok .red {color:green;}
+.red.zagolovok {color:red;}
+h1.zagolovok,.red {color:blue;}
+
+div>h1>a{text-decoration:none;}
+em+span{color:red;}
+a[title][class]{}
+
+
 /*#z1 {background:yellow;}*/
 /*h1.zagolovok {background:black;}*/
-.zagolovok {background:red;}
+/*.zagolovok {background:red;}*/
 .zag1.zag2 {background:green;}
 
 h1 {background:blue;color:white;}
+/*body a{color:green;}
+
+body h1 a{color:red;}
+body>h1>a{color:black;}
+em span{color:red;}
+body a{color:green;}*/
+a:link {color:red;}
+a:active {color:black;}
+a:hover,a:visited:hover {color:yellow;}
+a:visited {color:#b3d4a5;}
+a.red:link {color:green;}
+a.red:active {color:grey;}
+a.red:hover,a.red:visited:hover {color:black;}
+a.red:visited {color:#b3d4a5;}
+
+ul>li:first-child {color:#88d999;}
+ul>li:last-child {color:red;}
+ul>li:nth-child(2) {color:blue;}
+ul li ol li{color:black !important;}
+
+ul#spisok1 li:before {color:green;content:'<div>'}
