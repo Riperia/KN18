@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #my p.announce, .tt.pm li li a:hover+span { color: #f00; }
+    </style>
+  </head>
+  <body>
+    <div id="my"><p class="announce">1</p></div>
+    <div class="tt pm">
+        <ul>
+         <li>
+            <ul>
+              <li>
+                  <a href="#">2</a><span>3</span>
+              </li>
+            </ul>
+         </li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+      var myAlert = function(name) {
+      alert("Hello " + name);
+    }
+    function helloMike(myFunc) { // тут функция передаётся как параметр
+    myFunc("Mike"); // а тут мы её вызываем
+  }
+    helloMike(myAlert);
+
+      //helloMike(myAlert);
+    </script>
+  </body>
+</html>
