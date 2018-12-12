@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <style type="text/css">
+            .drag,#ball {font-size: x-large; border: thin solid black;
+                width: 5em; text-align: center; padding:10px}
+
+        </style>
+        <meta charset="utf-8">
+    </head>
+    <body>
+      <div id="draggable" class="drag ui-widget ui-corner-all ui-state-error">
+        Drag me
+    </div>
+<div id="ball">Drag</div>
+<div ></div>
+<div id="container">
+ <span id="question">Какая ваша любимая CMS?</span>
+ <div><span>0</span><a href="">За америка</a>
+   <div class="progressbar ui-progressbar ui-corner-all ui-widget ui-widget-content"></div>
+
+ </div>
+ <div><span>0</span><a href="">За</a>україна
+<div class="progressbar ui-progressbar ui-corner-all ui-widget ui-widget-content"></div>
+ </div>
+ <div><span>0</span><a href="">За</a>росія
+ <div class="progressbar ui-progressbar ui-corner-all ui-widget ui-widget-content"></div></div>
+ <div><span>0</span><a href="">За</a>ітфлія
+ <div class="progressbar ui-progressbar ui-corner-all ui-widget ui-widget-content"></div></div>
+ <div><span>0</span><a href="">За</a>утримався
+ <div class="progressbar ui-progressbar ui-corner-all ui-widget ui-widget-content"></div></div>
+ <div><span>0</span><a href="">За</a>світ
+ <div class="progressbar ui-progressbar ui-corner-all ui-widget ui-widget-content"></div></div>
+</div>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript">
+        $('#progressbar').progressbar({
+          value:10
+        });
+            $("#container div a").click(function() {
+                var sum = 1;
+              $("#container div span").each(function(){
+                  sum += parseInt($(this).text());
+                   // Or this.innerHTML, this.innerText
+              });
+              /*  $(this).parent().animate({
+                   width: '+=100px'
+                }, 500);*/
+
+
+
+                $(this).prev().html(parseInt($(this).prev().html()) + 1);
+                var current = parseInt($(this).prev().text());
+                console.log(current);
+                console.log(sum);
+                var per = current*100/sum;
+                     // Or this.innerHTML, this.innerText
+                     $(this).next().progressbar({
+                       value:per
+                     });
+
+
+
+                return false;
+            });
+
+
+
+        $(function() {
+
+    	     $('.drag').draggable();
+
+        });
+
+/*
+
+        ball.onmousedown = function(event) {
+
+  let shiftX = event.clientX - ball.getBoundingClientRect().left;
+  let shiftY = event.clientY - ball.getBoundingClientRect().top;
+
+  ball.style.position = 'absolute';
+  ball.style.zIndex = 1000;
+  document.body.append(ball);
+
+  moveAt(event.pageX, event.pageY);
+
+  // centers the ball at (pageX, pageY) coordinates
+  function moveAt(pageX, pageY) {
+    ball.style.left = pageX - shiftX + 'px';
+    ball.style.top = pageY - shiftY + 'px';
+  }
+
+  function onMouseMove(event) {
+    moveAt(event.pageX, event.pageY);
+  }
+
+  // (3) move the ball on mousemove
+  document.addEventListener('mousemove', onMouseMove);
+
+  // (4) drop the ball, remove unneeded handlers
+  ball.onmouseup = function() {
+    document.removeEventListener('mousemove', onMouseMove);
+    ball.onmouseup = null;
+  };
+
+};
+
+ball.ondragstart = function() {
+  return false;
+};*/
+
+        </script>
+    </body>
+</html>
