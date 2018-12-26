@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <style type="text/css">
+
+
+        </style>
+        <meta charset="utf-8">
+    </head>
+    <body>
+      <div id="draggable" class="drag ui-widget ui-corner-all ui-state-error">
+        Drag me
+    </div>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <script type="text/javascript">
+        $("div").mouseover(function(){
+            $(this).animate({
+              fontSize: "1000px",
+
+            }, 1000 );
+            $(this).css('color','#567aaa');
+          });
+
+          $("div").mouseout(function(){
+              $(this).stop();
+              /*$(this).animate({
+                fontSize: "100px"
+              }, 10000 );*/
+            });
+        </script>
+    </body>
+</html>
