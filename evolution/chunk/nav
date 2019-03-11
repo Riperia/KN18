@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">[(site_name)]</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    [!Wayfinder? &startId=`0` &level=`1` &outerTpl=`outerTpl` &rowTpl=`rowTpl` &parentRowTpl=`parentRowTpl` &innerRowTpl=`innerRowTpl`]]
+    [!AjaxSearch? &landingPage=`11` &tplInput=`search` &language=`ukranian`!]
+	 
+  </div>
+</nav>
