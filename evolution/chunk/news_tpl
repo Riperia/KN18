@@ -1,0 +1,9 @@
+      <div class="col-4">
+        <a href="[~[+id+]~]" ><img src="[[phpthumb? &input=`[+tv.newsphoto+]` &options=`w=150,h=150,zc=C`]]" class="rounded-circle"></a>
+        <h2>[+pagetitle+]</h2>
+		  <h4>[+date+]</h4>
+		  <p>[+introtext+]</p>
+        <p><a class="btn btn-secondary" href="[~[+id+]~]" role="button">Читати далі &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+     
+ 
