@@ -1,0 +1,5 @@
+[!AjaxSearch? &showInputForm=`1` &ajaxSearch=`0` &tplInput=`search` &language=`ukranian` &grabMax=`3`!]
+<hr>
+<h2>Мапа сайту</h2>
+[[Wayfinder? &startId=`0` &level=`10` &ignoreHidden=`1`]]
+
